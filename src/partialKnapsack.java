@@ -40,7 +40,7 @@ public class partialKnapsack {
 					System.out.printf("Item[%d] (benefit = %d, weight = %d) INSERTED\n", nextIndex, items[nextIndex].getBenefit(), items[nextIndex].getWeight());
 			}
 			if(printInsertion)
-				System.out.printf("Current Total: Benefit = %.2f, Weight = %d\n", totalBenefit, totalWeight);
+				System.out.printf("Current Total: Benefit = %.2f, Weight = %d/%d\n", totalBenefit, totalWeight, limit);
 		}
 		
 		return totalBenefit;
